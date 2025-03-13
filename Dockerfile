@@ -62,8 +62,6 @@ ENV APACHE_RUN_GROUP_ID 1000
 COPY db.sql /filerun.setup.sql
 COPY autoconfig.php /
 
-VOLUME ["/var/www/html", "/user-files"]
-
 COPY ./entrypoint.sh /
 COPY ./wait-for-it.sh /
 COPY ./import-db.sh /
